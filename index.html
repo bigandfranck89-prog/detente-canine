@@ -159,6 +159,11 @@ footer a{color:var(--rose)}
  width:46px;height:46px;border-radius:50%;border:2px solid #d97b29 !important;background:#fff !important;
  color:#a05014 !important;font-size:1.5rem;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(80,50,20,.28);display:flex;align-items:center;justify-content:center}
 .modal-fermer:hover{background:#d97b29 !important;color:#fff !important}
+/* Le bandeau du haut est « collant » et se dessine au-dessus du contenu.
+   Quand une fenêtre est ouverte, on le fait passer dessous, sinon il recouvre
+   la croix de fermeture (signalé par Angélique le 11/08). */
+body.fenetre-ouverte header{z-index:0 !important}
+body:has(.modal.ouvert) header, body:has(#lightbox[style*="display: block"]) header{z-index:0 !important}
 .modal-retour{display:inline-flex;align-items:center;gap:7px;background:#fdf3e6;border:1px solid #f0d5b0;color:#a05014;
  border-radius:30px;padding:9px 18px;font-weight:700;cursor:pointer;font-size:.95rem;margin-bottom:14px}
 .modal-retour:hover{background:#d97b29;color:#fff}
@@ -603,10 +608,12 @@ function ouvrirModeles(cat){
   });
   document.getElementById('modal-modeles').classList.add('ouvert');
   document.body.style.overflow = 'hidden';
+  document.body.classList.add('fenetre-ouverte');
 }
 function fermerModeles(){
   document.getElementById('modal-modeles').classList.remove('ouvert');
   document.body.style.overflow = '';
+  document.body.classList.remove('fenetre-ouverte');
 }
 function majPrixTaille(){
   const sel = document.getElementById('taille_chien');
@@ -838,8 +845,10 @@ function bdMove(d){bdGo(bdI+d)}
 </div>
 <script>
 function ouvrirPlanche(){var b=document.getElementById('bdImg');document.getElementById('lightboxImg').src=b.src;
- document.getElementById('lightbox').style.display='block';document.body.style.overflow='hidden';}
-function fermerPlanche(){document.getElementById('lightbox').style.display='none';document.body.style.overflow='';}
+ document.getElementById('lightbox').style.display='block';document.body.style.overflow='hidden';
+ document.body.classList.add('fenetre-ouverte');}
+function fermerPlanche(){document.getElementById('lightbox').style.display='none';document.body.style.overflow='';
+ document.body.classList.remove('fenetre-ouverte');}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')fermerPlanche();});
 </script>
 </body>
