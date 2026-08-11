@@ -292,11 +292,11 @@ body:has(.modal.ouvert) header, body:has(#lightbox[style*="display: block"]) hea
   <p class="sous-titre">Solides, légers et 100 % personnalisables : <strong>vous choisissez les couleurs</strong>, Angélique tresse à la taille exacte de votre chien. Fabrication ≈ 1 semaine · envoi postal dans toute la France.</p>
   <div class="produits">
     <div class="produit" onclick="ouvrirModeles('laisse')"><img src="photos/laisse.jpg" alt="Laisse paracorde tressée main rouge et noire">
-      <div class="corps"><h3>Laisses</h3><p class="prixp">25 à 65 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+      <div class="corps"><h3>Laisses</h3><p class="prixp">28 à 45 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
     <div class="produit" onclick="ouvrirModeles('harnais')"><img src="photos/produits/harnais-1.jpg" alt="Harnais paracorde fait main rouge et noir">
-      <div class="corps"><h3>Harnais</h3><p class="prixp">45 à 75 €</p><p>chiens de 1 à 10 kg uniquement</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+      <div class="corps"><h3>Harnais</h3><p class="prixp">à partir de 45 €</p><p>chiens de 1 à 10 kg uniquement</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
     <div class="produit" onclick="ouvrirModeles('collier')"><img src="photos/produits/p-5385.jpg" alt="Collier paracorde Olympe tressé main">
-      <div class="corps"><h3>Colliers</h3><p class="prixp">30 à 65 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+      <div class="corps"><h3>Colliers</h3><p class="prixp">28 à 65 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
   </div>
   <h3 style="margin-top:32px">🎨 Tous nos coloris</h3>
   <p class="sous-titre" style="margin-bottom:2px"><strong>Paracorde 550 (la tresse)</strong> — 21 couleurs unies :</p>
@@ -322,7 +322,7 @@ body:has(.modal.ouvert) header, body:has(#lightbox[style*="display: block"]) hea
     <p class="sous-titre" id="modal-prix"></p>
     <p>Chaque modèle est tressé main, <strong>à vos couleurs</strong> et aux mesures exactes de votre chien. Choisissez un tressage, Angélique s'occupe du reste.</p>
     <div class="modeles-grille" id="modal-grille"></div>
-    <div class="note-info" style="margin-top:22px">📷 Les photos de chaque tressage arrivent bientôt. En attendant, un doute sur le modèle ? Appelez Angélique : <a class="tel-lien" href="tel:+33671734356" style="font-weight:800;color:var(--orange-fonce);text-decoration:none">06 71 73 43 56</a></div>
+    <div class="note-info" style="margin-top:22px">📷 Les photos sont celles des créations réellement réalisées par Angélique. Un doute sur le modèle ou une taille ? Appelez-la : <a class="tel-lien" href="tel:+33671734356" style="font-weight:800;color:var(--orange-fonce);text-decoration:none">06 71 73 43 56</a></div>
   </div>
 </div>
 
@@ -407,9 +407,9 @@ body:has(.modal.ouvert) header, body:has(#lightbox[style*="display: block"]) hea
       <label for="type_creation">Type de création *</label>
       <select id="type_creation" name="type_creation" data-req>
         <option value="">— choisir —</option>
-        <option value="collier">Collier (30 à 65 €)</option>
-        <option value="laisse">Laisse (25 à 65 €)</option>
-        <option value="harnais">Harnais (45 à 75 €)</option>
+        <option value="collier">Collier (28 à 65 €)</option>
+        <option value="laisse">Laisse (28 à 45 €)</option>
+        <option value="harnais">Harnais (à partir de 45 €)</option>
         <option value="plusieurs">Plusieurs créations / ensemble assorti</option>
       </select>
       <label for="modele_paracorde">Modèle de tressage (si repéré)</label>
@@ -479,7 +479,7 @@ const CONFIG = {
   PORTEE_TEXTE: "<strong>Naissance prévue : automne 2026.</strong><br>Laissez vos coordonnées pour être prévenu(e) dès l'arrivée des chiots.",
   /* Modèles de tressage paracorde — pour ajouter une photo : photo:'photos/paracorde/cobra.jpg' */
   MODELES: {
-    collier: { titre:'Colliers paracorde', prix:'30 à 65 € selon le modèle',
+    collier: { titre:'Colliers paracorde', prix:'28 à 65 € selon le modèle',
       intro:"Six modèles — chacun porte le nom d'une de nos chiennes. Le nombre de couleurs indiqué est celui des fils tressés ; la boucle Biothane se choisit en plus, dans une seule teinte.",
       modeles:[
         {nom:"Bella", tarifs:[['20 à 24 cm','28 €'],['25 à 35 cm','35 €']], detail:"largeur 1,6 cm · épaisseur 0,5 cm · 2 couleurs de fil", coul:2, photos:['photos/produits/p-5360.jpg','photos/produits/p-5352.jpg']},
@@ -488,7 +488,7 @@ const CONFIG = {
         {nom:"Vénus", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 3,5 cm · épaisseur 1,2 cm · 3 couleurs de fil", coul:3, photos:['photos/produits/p-5381.jpg','photos/produits/p-5365.jpg']},
         {nom:"Olympe", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 4 cm · épaisseur 1,2 cm · 4 couleurs de fil", coul:4, photos:['photos/produits/p-5385.jpg','photos/produits/p-5386.jpg','photos/produits/p-5383.jpg','photos/produits/p-5384.jpg','photos/produits/p-5375.jpg','photos/produits/p-5374.jpg']},
         {nom:"Sunny", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 4,3 cm · épaisseur 1,2 cm · 4 couleurs de fil", coul:4, photos:['photos/produits/p-5371.jpg','photos/produits/p-5346.jpg','photos/produits/p-5350.jpg','photos/produits/p-5357.jpg','photos/produits/p-5373.jpg','photos/produits/p-5349.jpg','photos/produits/p-5358.jpg','photos/produits/p-5359.jpg','photos/produits/p-5363.jpg']} ] },
-    laisse:  { titre:'Laisses paracorde',  prix:'25 à 65 € selon le modèle',
+    laisse:  { titre:'Laisses paracorde',  prix:'28 à 45 € selon le modèle',
       intro:"Trois formes — fine ronde, plate, large ronde — en 1,20 m, 3 positions ou lasso. Le nombre de couleurs est celui des fils tressés ; la finition Biothane se choisit en plus.",
       modeles:[
         {nom:"Fine ronde 1,20 m", tarifs:[['1,20 m','28 €'],['+10 cm','+2 €']], detail:"2 couleurs de fil", coul:2, photos:['photos/produits/p-5343.jpg','photos/produits/p-5366.jpg']},
@@ -499,7 +499,7 @@ const CONFIG = {
         {nom:"Large ronde 1,20 m", tarifs:[['1,20 m','35 €'],['+10 cm','+2 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5344.jpg','photos/produits/p-5367.jpg','photos/produits/p-5380.jpg','photos/produits/p-5377.jpg']},
         {nom:"Large ronde 3 positions", tarifs:[['3 positions','40 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5361.jpg']},
         {nom:"Large ronde lasso", tarifs:[['lasso','45 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5341.jpg','photos/produits/p-5340.jpg']} ] },
-    harnais: { titre:'Harnais paracorde',  prix:'45 à 75 €',
+    harnais: { titre:'Harnais paracorde',  prix:'à partir de 45 €',
       intro:"⚠️ Uniquement pour les chiens de 1 à 10 kg. Tressé main, à vos couleurs.",
       modeles:[ {nom:'Harnais petit chien', tarifs:[['1 à 10 kg','45 à 55 €']], detail:'chiens de 1 à 10 kg · 3 couleurs de fil', coul:3, photos:['photos/produits/harnais-1.jpg','photos/produits/harnais-2.jpg']} ] }
   },
