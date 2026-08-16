@@ -1,1 +1,867 @@
-<!--PLACEHOLDER-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Détente Canine — Toilettage canin à Verlin (89) · Accessoires paracorde · Élevage</title>
+<meta name="description" content="Salon de toilettage canin à Verlin (Yonne) — 29 ans d'expérience, douceur et patience. Colliers, laisses et harnais paracorde faits main. Élevage familial de goldens retrievers LOF.">
+<style>
+:root{
+  --rose:#F5C9D4; --rose-fonce:#E39CB2; --bleu:#CFE4F2; --bleu-fonce:#9CC4E0;
+  --orange:#F28C38; --orange-fonce:#DD7A28;
+  --creme:#FFF9F5; --blanc:#FFFFFF; --texte:#3A3A3A; --texte-doux:#6E6E6E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--texte);background:var(--creme);line-height:1.65}
+h1,h2,h3{line-height:1.22}
+h2{font-size:2rem;margin-bottom:.5rem}
+.sous-titre{color:var(--texte-doux);margin-bottom:26px;font-size:1.05rem}
+.section{max-width:1080px;margin:0 auto;padding:64px 20px}
+.tag{display:inline-block;background:var(--bleu);border-radius:999px;padding:4px 16px;font-size:.85rem;font-weight:700;margin-bottom:12px;color:var(--texte)}
+.btn{display:inline-block;background:var(--orange);color:#fff;font-weight:700;padding:15px 30px;border-radius:999px;text-decoration:none;border:none;font-size:1.06rem;cursor:pointer;box-shadow:0 6px 18px rgba(242,140,56,.4);transition:.2s}
+.btn:hover{background:var(--orange-fonce);transform:translateY(-2px)}
+.btn-clair{background:var(--blanc);color:var(--texte);border:2px solid var(--rose-fonce);box-shadow:none}
+.btn-clair:hover{background:var(--rose)}
+/* motif pattes en fond */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;z-index:0;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23B26E85'%3E%3Cellipse cx='36' cy='38' rx='7' ry='9'/%3E%3Cellipse cx='52' cy='30' rx='6' ry='8'/%3E%3Cellipse cx='68' cy='30' rx='6' ry='8'/%3E%3Cellipse cx='84' cy='38' rx='7' ry='9'/%3E%3Cpath d='M60 46c12 0 20 9 20 18 0 8-6 12-20 12S40 72 40 64c0-9 8-18 20-18z'/%3E%3C/g%3E%3C/svg%3E")}
+main{position:relative;z-index:1}
+/* header */
+header{background:rgba(255,249,245,.92);backdrop-filter:blur(8px);position:sticky;top:0;z-index:60;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.nav{max-width:1080px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.nav .marque{display:flex;align-items:center;gap:11px;font-size:1.2rem;font-weight:800}
+.nav .marque img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--rose-fonce)}
+.nav .marque-txt{display:flex;flex-direction:column;line-height:1.12}
+.nav .marque-nom{font-size:1.2rem;font-weight:800}
+.nav .marque-sous{font-size:.92rem;font-weight:800;color:var(--orange-fonce);text-transform:uppercase;letter-spacing:.4px}
+@media(max-width:560px){.nav .marque-sous{font-size:.82rem}}
+.nav a{color:var(--texte);text-decoration:none;font-weight:600;font-size:.95rem;padding:6px 2px}
+.nav a:hover{color:var(--orange-fonce)}
+.nav .cta{background:var(--orange);color:#fff;padding:9px 18px;border-radius:999px}
+.nav .cta:hover{background:var(--orange-fonce);color:#fff}
+.nav .tel-nav{background:var(--bleu);padding:8px 16px;border-radius:999px;font-weight:800;white-space:nowrap;margin-right:auto}
+.nav .tel-nav:hover{background:var(--bleu-fonce);color:var(--texte)}
+@media(max-width:560px){.nav .tel-nav{font-size:.85rem;padding:7px 12px}}
+/* hero */
+.hero{position:relative;min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:url('photos/logo.jpeg') center 40%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(58,42,50,.55) 0%,rgba(58,42,50,.35) 55%,rgba(255,249,245,.97) 100%)}
+.hero>div{position:relative;padding:60px 20px}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);text-shadow:0 2px 14px rgba(0,0,0,.45);margin-bottom:14px}
+.hero p.accroche{font-size:clamp(1.05rem,2.4vw,1.4rem);max-width:640px;margin:0 auto 12px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.etoiles{display:inline-block;background:rgba(255,255,255,.94);color:var(--texte);border-radius:999px;padding:8px 20px;font-weight:700;margin:14px 0 22px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.badge-offre{display:block;max-width:430px;margin:0 auto 24px;background:rgba(255,255,255,.95);color:var(--texte);border:2px dashed var(--orange);border-radius:16px;padding:12px 20px;font-weight:800;font-size:1.1rem}
+/* cartes */
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:26px}
+.carte{background:var(--blanc);border-radius:20px;padding:28px;box-shadow:0 6px 24px rgba(0,0,0,.07)}
+.carte h3{margin-bottom:8px}
+.carte .ico{width:52px;height:52px;margin-bottom:12px}
+/* avant/après */
+.avap{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:860px;margin:26px auto 0}
+.avap figure{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.14)}
+.avap img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4;display:block}
+.avap figcaption{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.95);border-radius:999px;padding:6px 18px;font-weight:800;font-size:.95rem}
+.avap .apres figcaption{background:var(--orange);color:#fff}
+/* galerie carrousel */
+.car-principale.contain{aspect-ratio:1/1;object-fit:contain;background:#2a2226}
+.carrousel.portrait{max-width:540px}
+.car-principale.portrait{aspect-ratio:3/4;object-fit:contain;background:#2a2226}
+.carrousel{max-width:720px;margin:24px auto 0}
+.car-scene{position:relative;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.16);background:#2a2226}
+.car-principale{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.car-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);border:none;width:48px;height:48px;border-radius:50%;font-size:1.9rem;line-height:1;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.28);color:var(--texte);z-index:2;display:flex;align-items:center;justify-content:center;padding-bottom:4px}
+.car-nav:hover{background:var(--orange);color:#fff}
+.car-prev{left:12px}
+.car-next{right:12px}
+.car-compteur{position:absolute;bottom:12px;right:14px;background:rgba(0,0,0,.55);color:#fff;font-weight:700;font-size:.85rem;padding:4px 12px;border-radius:999px;z-index:2}
+.car-miniatures{display:flex;gap:10px;overflow-x:auto;padding:14px 4px 4px;scroll-behavior:smooth}
+.car-mini{flex:0 0 auto;width:78px;height:78px;border-radius:12px;object-fit:cover;cursor:pointer;opacity:.55;border:3px solid transparent;transition:.2s}
+.car-mini:hover{opacity:.85}
+.car-mini.actif{opacity:1;border-color:var(--orange);box-shadow:0 3px 10px rgba(242,140,56,.4)}
+@media(max-width:560px){.car-nav{width:42px;height:42px;font-size:1.6rem}.car-mini{width:64px;height:64px}}
+/* tarifs */
+table{width:100%;border-collapse:collapse;background:var(--blanc);border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.07)}
+th{background:var(--rose);padding:14px;text-align:left}
+td{padding:14px;border-top:1px solid #F3E4E8}
+.prix{font-weight:800;white-space:nowrap}
+.fond-bleu{background:linear-gradient(165deg,var(--bleu) 0%,var(--creme) 75%)}
+.fond-rose{background:linear-gradient(165deg,var(--rose) 0%,var(--creme) 75%)}
+.pleine{max-width:100%}
+.pleine>div{max-width:1080px;margin:0 auto}
+.note-info{background:var(--blanc);border-left:5px solid var(--bleu-fonce);padding:16px 20px;border-radius:0 14px 14px 0;margin:18px 0;color:var(--texte-doux)}
+/* salon */
+.salon-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:center;margin-top:20px}
+.salon-grid img{width:100%;border-radius:20px;box-shadow:0 8px 28px rgba(0,0,0,.14)}
+@media(max-width:760px){.salon-grid{grid-template-columns:1fr}.avap{grid-template-columns:1fr}}
+/* produits paracorde */
+.produits{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:24px}
+.produit{background:var(--blanc);border-radius:20px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.09);cursor:pointer;transition:.2s}
+.produit:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.14)}
+.produit img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.produit .corps{padding:20px}
+.produit .prixp{font-size:1.35rem;font-weight:800;color:var(--orange-fonce)}
+.produit .voir-modeles{display:inline-block;margin-top:10px;font-weight:800;color:var(--orange-fonce)}
+/* coloris paracorde / biothane */
+.coloris{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+.coloris .sw{width:80px;text-align:center;font-size:.74rem;color:var(--texte);line-height:1.15}
+.coloris .pastille{width:58px;height:58px;border-radius:14px;margin:0 auto 5px;border:2px solid rgba(0,0,0,.08);box-shadow:0 2px 8px rgba(0,0,0,.16);background-size:cover;background-position:center}
+.coloris .code{color:var(--doux);font-size:.66rem}
+.pick{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 8px}
+.pick .sw{width:68px;text-align:center;font-size:.7rem;cursor:pointer;user-select:none;line-height:1.12}
+.pick .pastille{width:46px;height:46px;border-radius:12px;margin:0 auto 4px;border:2px solid rgba(0,0,0,.08);box-shadow:0 2px 6px rgba(0,0,0,.16);transition:.15s;background-size:cover;background-position:center}
+.pick .sw.on .pastille{outline:3px solid var(--orange);outline-offset:2px;transform:scale(1.07)}
+.pick .sw.on{font-weight:800;color:var(--orange-fonce)}
+/* Coloris momentanément indisponibles (piloté par dispo:false dans CONFIG) */
+.sw.indispo{opacity:.42;cursor:not-allowed}
+.sw.indispo .pastille{filter:grayscale(1);box-shadow:none}
+.sw .rupture{display:block;font-size:.6rem;font-weight:700;color:var(--doux);letter-spacing:.02em;margin-top:1px}
+.pick .sw.indispo:active .pastille{transform:none}
+/* page modèles paracorde */
+.modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(35,22,28,.6);overflow-y:auto;padding:26px 14px}
+.modal.ouvert{display:block}
+.modal-inner{background:var(--creme);max-width:920px;margin:0 auto;border-radius:22px;padding:30px 26px;position:relative}
+.modal-fermer{position:absolute;top:14px;right:16px;background:var(--blanc);border:none;font-size:1.3rem;border-radius:50%;width:42px;height:42px;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.18);font-weight:800}
+.modal-fermer:hover{background:var(--rose)}
+.modeles-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:20px}
+.modele{background:var(--blanc);border-radius:16px;overflow:hidden;box-shadow:0 5px 16px rgba(0,0,0,.08);text-align:center}
+.modele .ph{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--bleu),var(--rose));font-size:2rem;gap:4px}
+.modele .ph span{font-size:.8rem;font-weight:700;color:var(--texte)}
+.modele img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.modele .nom{font-weight:800;padding:12px 8px 2px}
+.modele .btn-modele{margin:10px 0 14px;padding:8px 18px;font-size:.9rem;box-shadow:none}
+/* formulaire */
+form{background:var(--blanc);border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(0,0,0,.09);max-width:640px;margin:0 auto}
+label{display:block;font-weight:700;margin:15px 0 5px}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #E3D5DA;border-radius:12px;font-size:1rem;font-family:inherit;background:#FDFBFA}
+input:focus,select:focus,textarea:focus{outline:2.5px solid var(--rose-fonce);border-color:transparent}
+.consent{display:flex;gap:10px;align-items:flex-start;margin:16px 0;font-size:.9rem;color:var(--texte-doux)}
+.consent input{width:auto;margin-top:4px}
+.msg-ok{display:none;background:#E7F6EC;border:1.5px solid #7BC894;color:#2C6E43;padding:15px;border-radius:12px;margin-top:14px;font-weight:700}
+.msg-err{display:none;background:#FBEAEA;border:1.5px solid #E09999;color:#9E3A3A;padding:15px;border-radius:12px;margin-top:14px;font-weight:700}
+footer{background:var(--texte);color:#EFE7E3;padding:36px 20px;font-size:.85rem;position:relative;z-index:1}
+footer a{color:var(--rose)}
+
+.mod-visu{position:relative;border-radius:12px;overflow:hidden;background:#f4ece0}
+.mod-visu img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.mod-pts{position:absolute;bottom:8px;left:0;right:0;display:flex;gap:6px;justify-content:center}
+.mod-pts span{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.65);border:2px solid rgba(0,0,0,.35);cursor:pointer}
+.mod-pts span.on{background:var(--orange,#d97b29)}
+.mod-det{font-size:.82rem;color:#6b6257;margin:2px 0 8px;text-align:center}
+.menu-deroulant{position:relative;display:inline-block}
+.menu-deroulant>a{cursor:pointer}
+.menu-deroulant .md-liste{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid #e8e0d4;border-radius:12px;box-shadow:0 12px 30px rgba(80,50,20,.16);padding:6px;min-width:210px;z-index:60}
+.menu-deroulant.ouvert .md-liste{display:block}
+.menu-deroulant .md-liste a{display:block;padding:9px 14px;border-radius:8px;white-space:nowrap;color:#2b2620;text-decoration:none;font-weight:600}
+.menu-deroulant .md-liste a:hover{background:#fdf3e6;color:#a05014}
+
+.compte-coul{font-size:.9rem;font-weight:700;color:#a05014;background:#fff6e9;border:1px solid #f0d5b0;border-radius:10px;padding:9px 13px;margin:4px 0 10px;display:none}
+.compte-coul:not(:empty){display:block}
+.compte-coul.ok{color:#2f6b45;background:#eef6ef;border-color:#cfe3d2}
+.compte-coul.stop{animation:secousse .4s;background:#ffe9e6;border-color:#f3bdb5;color:#a3312a}
+@keyframes secousse{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+.modal-fermer{position:fixed !important;top:14px !important;right:16px !important;float:none !important;z-index:100000 !important;
+ width:46px;height:46px;border-radius:50%;border:2px solid #d97b29 !important;background:#fff !important;
+ color:#a05014 !important;font-size:1.5rem;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(80,50,20,.28);display:flex;align-items:center;justify-content:center}
+.modal-fermer:hover{background:#d97b29 !important;color:#fff !important}
+/* Le bandeau du haut est « collant » et se dessine au-dessus du contenu.
+   Quand une fenêtre est ouverte, on le fait passer dessous, sinon il recouvre
+   la croix de fermeture (signalé par Angélique le 11/08). */
+body.fenetre-ouverte header{z-index:0 !important}
+body:has(.modal.ouvert) header, body:has(#lightbox[style*="display: block"]) header{z-index:0 !important}
+.modal-retour{display:inline-flex;align-items:center;gap:7px;background:#fdf3e6;border:1px solid #f0d5b0;color:#a05014;
+ border-radius:30px;padding:9px 18px;font-weight:700;cursor:pointer;font-size:.95rem;margin-bottom:14px}
+.modal-retour:hover{background:#d97b29;color:#fff}
+.tarifs{width:100%;border-collapse:collapse;font-size:.86rem;margin:6px 0 10px;background:#fffaf3;border-radius:8px;overflow:hidden}
+.tarifs td{padding:4px 8px;border-top:1px solid #efe2cf}
+.tarifs td:last-child{text-align:right;font-weight:800;color:#a05014;white-space:nowrap}
+.rappel-prix{background:#fff6e9;border:1px solid #f0d5b0;border-radius:10px;padding:10px 13px;font-size:.9rem;margin:6px 0 12px}
+.rappel-prix b{color:#a05014}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <span class="marque"><img src="photos/logo.jpeg" alt="Détente Canine"><span class="marque-txt"><span class="marque-nom">🐾 Détente Canine</span><span class="marque-sous">Salon de toilettage canin</span></span></span>
+    <a class="tel-nav tel-lien" href="tel:+33671734356">📞 06 71 73 43 56</a>
+    <span class="menu-deroulant" id="md">
+      <a onclick="basculerMenu(event)">Toilettage ▾</a>
+      <span class="md-liste">
+        <a href="#toilettage" onclick="fermerMenu()">✂️ Toilettage</a>
+        <a href="#accessoires" onclick="fermerMenu()">🧶 Créations paracorde</a>
+        <a href="#elevage" onclick="fermerMenu()">🌼 Élevage de Goldens</a>
+        <a href="#journal" onclick="fermerMenu()">📖 Le Journal du Hameau</a>
+      </span>
+    </span>
+    <a href="#accessoires">Accessoires canins</a>
+    <a href="#elevage">Élevage</a>
+    <a class="cta" href="#rdv">Demander un RDV</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<div class="hero" id="toilettage">
+  <div>
+    <span class="tag">Salon de toilettage canin · Verlin (Yonne)</span>
+    <h1>29 ans de douceur<br>au service de votre chien</h1>
+    <p class="accroche">Angélique accueille tous les chiens — du plus petit au plus grand, y compris les plus craintifs — dans son salon à Verlin, sur rendez-vous.</p>
+    <span class="etoiles">⭐⭐⭐⭐⭐ 4,9/5 sur Google · 56 avis</span>
+    <span class="badge-offre">🎁 -10 % pour tout nouveau client (1ʳᵉ visite)</span>
+    <a class="btn" href="#rdv">Demander un rendez-vous</a>
+    <p style="margin-top:16px"><a class="tel-lien" href="tel:+33671734356" style="color:#fff;font-weight:800;font-size:1.2rem;text-decoration:none;text-shadow:0 1px 10px rgba(0,0,0,.55)">📞 06 71 73 43 56</a></p>
+  </div>
+</div>
+
+<!-- SAVOIR-FAIRE -->
+<div class="section">
+  <span class="tag">Le savoir-faire</span>
+  <h2>Un toilettage complet, tout en douceur</h2>
+  <p class="sous-titre">Coupe ciseaux, tonte, épilation, shampoing, ongles — et la patience en plus.</p>
+  <div class="cartes">
+    <div class="carte">
+      <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="20" cy="44" r="9" stroke="#E39CB2" stroke-width="4"/><circle cx="44" cy="44" r="9" stroke="#E39CB2" stroke-width="4"/><path d="M27 38 54 12M37 38 10 12" stroke="#F28C38" stroke-width="5" stroke-linecap="round"/></svg>
+      <h3>Toutes les coupes</h3><p>Coupe ciseaux, tonte, épilation, préparation aux expositions possible sur demande.</p>
+    </div>
+    <div class="carte">
+      <svg class="ico" viewBox="0 0 64 64" fill="none"><path d="M32 54S8 40 8 24c0-8 6-14 13-14 5 0 9 3 11 7 2-4 6-7 11-7 7 0 13 6 13 14 0 16-24 30-24 30z" fill="#F5C9D4" stroke="#E39CB2" stroke-width="3"/></svg>
+      <h3>Douceur &amp; patience</h3><p>Chien anxieux, âgé ou difficile ? Angélique prend le temps qu'il faut, sans jamais forcer.</p>
+    </div>
+    <div class="carte">
+      <svg class="ico" viewBox="0 0 64 64" fill="none"><ellipse cx="22" cy="20" rx="5" ry="7" fill="#9CC4E0"/><ellipse cx="42" cy="20" rx="5" ry="7" fill="#9CC4E0"/><ellipse cx="12" cy="30" rx="4.5" ry="6" fill="#9CC4E0"/><ellipse cx="52" cy="30" rx="4.5" ry="6" fill="#9CC4E0"/><path d="M32 30c9 0 15 7 15 14 0 6-5 9-15 9s-15-3-15-9c0-7 6-14 15-14z" fill="#CFE4F2" stroke="#9CC4E0" stroke-width="2"/></svg>
+      <h3>Tous les gabarits</h3><p>Du chihuahua au bouvier bernois : toutes tailles et tous poils sont les bienvenus.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AVANT / APRES -->
+<div class="section pleine fond-bleu"><div>
+  <span class="tag">La preuve en images</span>
+  <h2>Avant / Après — nos amis à 4 pattes</h2>
+  <p class="sous-titre" style="margin-bottom:6px">Le même compagnon, le même jour — photos prises au salon. Faites défiler avec les flèches ou les miniatures. Retrouvez-en chaque semaine sur notre <a href="https://www.facebook.com/profile.php?id=100063984722777" target="_blank" rel="noopener">page Facebook</a>.</p>
+  <div class="carrousel">
+    <div class="car-scene">
+      <button class="car-nav car-prev" type="button" onclick="avapMove(-1)" aria-label="Photo précédente">‹</button>
+      <img class="car-principale contain" id="avap-principale" src="photos/avant-apres/ap-01.jpg" alt="Avant / après toilettage — bichon">
+      <button class="car-nav car-next" type="button" onclick="avapMove(1)" aria-label="Photo suivante">›</button>
+      <span class="car-compteur" id="avap-compteur"></span>
+    </div>
+    <div class="car-miniatures" id="avap-miniatures"></div>
+  </div>
+  <h3 style="margin-top:38px">Et quelques clients à 4 pattes du salon 🐕</h3>
+  <p class="sous-titre" style="margin-bottom:6px">Fraîchement toilettés, prêts à retrouver leurs maîtres. Faites défiler avec les flèches ou les miniatures.</p>
+  <div class="carrousel portrait">
+    <div class="car-scene">
+      <button class="car-nav car-prev" type="button" onclick="carMove(-1)" aria-label="Photo précédente">‹</button>
+      <img class="car-principale portrait" id="car-principale" src="photos/modeles/mod-01.jpg" alt="Client du salon">
+      <button class="car-nav car-next" type="button" onclick="carMove(1)" aria-label="Photo suivante">›</button>
+      <span class="car-compteur" id="car-compteur"></span>
+    </div>
+    <div class="car-miniatures" id="car-miniatures"></div>
+  </div>
+</div></div>
+
+<!-- TARIFS -->
+<div class="section">
+  <span class="tag">En toute transparence</span>
+  <h2>Tarifs toilettage</h2>
+  <table>
+    <tr><th>Prestation</th><th>Tarif</th></tr>
+    <tr><td>Petit chien (moins de 10 kg) — tonte / coupe ciseaux</td><td class="prix">55 € / 60 €</td></tr>
+    <tr><td>Chien moyen (10 à 25 kg) — tonte / coupe ciseaux</td><td class="prix">65 € / 75 €</td></tr>
+    <tr><td>Grand chien — selon le travail</td><td class="prix">80 à 150 €</td></tr>
+    <tr><td>Coupe d'ongles seule (incluse dans le toilettage complet)</td><td class="prix">8 €</td></tr>
+  </table>
+  <div class="note-info">📞 <strong>Rendez-vous :</strong> <a class="tel-lien" href="tel:+33671734356" style="font-weight:800;color:var(--orange-fonce);text-decoration:none">06 71 73 43 56</a> — ou via le formulaire ci-dessous.<br>🕐 <strong>Horaires :</strong> du mardi au samedi — 9h30-12h30 / 14h-18h. Fermé dimanche et lundi. Sur rendez-vous uniquement.<br>📍 <strong>Zone :</strong> Salon à Verlin (89) — clients bienvenus de Saint-Julien-du-Sault, Joigny, Villeneuve-sur-Yonne, Sens, Migennes… comme de plus loin.</div>
+</div>
+
+<!-- LE SALON -->
+<div class="section pleine fond-rose"><div>
+  <span class="tag">Bienvenue</span>
+  <h2>Le salon, à Verlin</h2>
+  <div class="salon-grid">
+    <img src="photos/salon.jpg" alt="Devanture du salon Détente Canine à Verlin">
+    <div>
+      <p style="font-size:1.05rem">Un vrai salon équipé, calme et chaleureux, où chaque chien est reçu <strong>seul, sur rendez-vous</strong> — pas d'attente en cage, pas de stress inutile.</p>
+      <div class="note-info" style="margin-top:18px">💛 Clientèle fidèle depuis 29 ans — certains maîtres viennent de Paris pour confier leur compagnon à Angélique.</div>
+      <a class="btn" href="#rdv" style="margin-top:10px">Prendre rendez-vous</a>
+    </div>
+  </div>
+</div></div>
+
+<!-- ACCESSOIRES PARACORDE -->
+<div class="section" id="accessoires">
+  <span class="tag">Fait main au salon</span>
+  <h2>Accessoires canins en paracorde — créations artisanales</h2>
+  <p class="sous-titre">Solides, légers et 100 % personnalisables : <strong>vous choisissez les couleurs</strong>, Angélique tresse à la taille exacte de votre chien. Fabrication ≈ 1 semaine · envoi postal dans toute la France.</p>
+  <div class="produits">
+    <div class="produit" onclick="ouvrirModeles('laisse')"><img src="photos/laisse.jpg" alt="Laisse paracorde tressée main rouge et noire">
+      <div class="corps"><h3>Laisses</h3><p class="prixp">28 à 45 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+    <div class="produit" onclick="ouvrirModeles('harnais')"><img src="photos/produits/harnais-1.jpg" alt="Harnais paracorde fait main rouge et noir">
+      <div class="corps"><h3>Harnais</h3><p class="prixp">à partir de 45 €</p><p>chiens de 1 à 10 kg uniquement</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+    <div class="produit" onclick="ouvrirModeles('collier')"><img src="photos/produits/p-5385.jpg" alt="Collier paracorde Olympe tressé main">
+      <div class="corps"><h3>Colliers</h3><p class="prixp">28 à 65 €</p><p>selon taille et modèle</p><span class="voir-modeles">Voir les modèles de tressage →</span></div></div>
+  </div>
+  <h3 style="margin-top:32px">🎨 Tous nos coloris</h3>
+  <p class="sous-titre" style="margin-bottom:2px"><strong>Paracorde 550 (la tresse)</strong> — 21 couleurs unies :</p>
+  <div class="coloris" id="coloris-paracorde"></div>
+  <p class="sous-titre" style="margin:18px 0 2px"><strong>Tresses Diamonds</strong> — motifs bicolores (paracorde 550) :</p>
+  <div class="coloris" id="coloris-diamonds"></div>
+  <p class="sous-titre" style="margin:18px 0 2px"><strong>Gamme spéciale</strong> — tressages multicolores exclusifs :</p>
+  <div class="coloris" id="coloris-speciales"></div>
+  <p class="sous-titre" style="margin:18px 0 2px"><strong>Finition / fermeture (Biothane)</strong> — 8 coloris :</p>
+  <div class="coloris" id="coloris-biothane"></div>
+  <div class="note-info">💳 <strong>Règlement :</strong> chèque ou espèces au salon · virement pour les commandes à distance — les coordonnées bancaires sont transmises personnellement par Angélique à la commande, jamais publiées en ligne. Photo de votre création avant envoi + numéro de suivi.</div>
+  <p style="margin-top:14px"><a class="btn" href="#rdv" onclick="preselect('paracorde')">Commander une création</a>
+  <a class="btn btn-clair tel-lien" href="tel:+33671734356" style="margin-left:10px">📞 06 71 73 43 56</a></p>
+</div>
+
+<!-- PAGE MODELES PARACORDE (s'ouvre au clic sur un produit) -->
+<div class="modal" id="modal-modeles" onclick="if(event.target===this)fermerModeles()">
+  <div class="modal-inner">
+    <button class="modal-fermer" onclick="fermerModeles()" aria-label="Fermer">✕</button>
+    <button type="button" class="modal-retour" onclick="fermerModeles()">← Retour à la page</button>
+    <span class="tag">Créations paracorde</span>
+    <h2 id="modal-titre">Modèles</h2>
+    <p class="sous-titre" id="modal-prix"></p>
+    <p>Chaque modèle est tressé main, <strong>à vos couleurs</strong> et aux mesures exactes de votre chien. Choisissez un tressage, Angélique s'occupe du reste.</p>
+    <div class="modeles-grille" id="modal-grille"></div>
+    <div class="note-info" style="margin-top:22px">📷 Les photos sont celles des créations réellement réalisées par Angélique. Un doute sur le modèle ou une taille ? Appelez-la : <a class="tel-lien" href="tel:+33671734356" style="font-weight:800;color:var(--orange-fonce);text-decoration:none">06 71 73 43 56</a></div>
+  </div>
+</div>
+
+<!-- ELEVAGE -->
+
+<!-- LE JOURNAL DU HAMEAU -->
+<div class="section" id="journal">
+  <span class="tag">🐾 Nouveau</span>
+  <h2>Le Journal du Hameau</h2>
+  <p class="sous-titre">Cliquez sur la planche pour la lire en grand. Chaque semaine, un épisode de la vie de nos goldens — racontée par eux. Leurs vraies photos, et ce qu'ils auraient sans doute à dire.</p>
+  <div class="carrousel" id="bdCar">
+    <div class="car-scene"><img id="bdImg" class="car-principale contain" style="cursor:zoom-in" onclick="ouvrirPlanche()" src="photos/bd/planche-1.jpg" alt="Le Journal du Hameau — épisode 1">
+      <button class="car-nav prev" onclick="bdMove(-1)" aria-label="Précédent">‹</button>
+      <button class="car-nav next" onclick="bdMove(1)" aria-label="Suivant">›</button>
+      <span class="car-compteur" id="bdCpt"></span>
+    </div>
+    <div class="car-miniatures" id="bdMini"></div>
+  </div>
+</div>
+
+<div class="section pleine fond-bleu" id="elevage"><div>
+  <img src="photos/elevage/g-5404.jpg" alt="Logo Du Hameau des Nymphes" style="max-width:210px;width:45%;display:block;margin:0 auto 14px;border-radius:16px">
+  <span class="tag">Élevage familial · LOF</span>
+  <h2>🌼 Élevage du Hameau des Nymphes — Goldens Retrievers</h2>
+  <p class="sous-titre">Une seule portée par an, des chiots élevés en famille, manipulés et sociabilisés dès la naissance. Référencé sur <a href="https://duhameaudesnymphes.chiens-de-france.com/golden-retriever?tag=cdf" target="_blank" rel="noopener">Chiens de France</a> (Yonne · Bourgogne-Franche-Comté).</p>
+  <div class="cartes">
+    <div class="carte"><h3>🍼 Prochaine portée</h3><p id="portee-info"><strong>Naissance prévue : automne 2026.</strong><br>Laissez vos coordonnées pour être prévenu(e) dès l'arrivée des chiots.</p></div>
+    <div class="carte"><h3>💶 Prix</h3><p style="font-size:1.6rem;font-weight:800;color:var(--orange-fonce)" id="prix-chiot">1 600 €</p><p>mâle ou femelle — affiché en toute transparence</p></div>
+    <div class="carte" id="carte-tel-elevage"><h3>📞 Parlons-en d'abord</h3><p>Chaque chiot est confié après un vrai échange avec Angélique :<br><a class="tel-lien" href="tel:+33671734356" id="tel-elevage" style="font-size:1.25rem;font-weight:800;color:var(--orange-fonce);text-decoration:none">06 71 73 43 56</a><br>ou laissez vos coordonnées, elle vous rappelle.</p></div>
+  </div>
+  <div class="note-info">ℹ️ Les réservations ne se font <strong>jamais en ligne</strong> — toujours après un échange personnel. C'est notre garantie que chaque chiot part dans la bonne famille.</div>
+  <p style="margin-top:14px"><a class="btn btn-clair" href="#rdv" onclick="preselect('elevage')">Être prévenu(e) de la prochaine portée</a></p>
+
+  <div class="carrousel" id="elevCar" style="margin-top:26px">
+    <div class="car-scene"><img id="elevImg" class="car-principale contain" src="photos/elevage/g-5403.jpg" alt="Golden retriever de l'élevage du Hameau des Nymphes">
+      <button class="car-nav prev" onclick="elevMove(-1)" aria-label="Précédent">‹</button>
+      <button class="car-nav next" onclick="elevMove(1)" aria-label="Suivant">›</button>
+      <span class="car-compteur" id="elevCpt"></span>
+    </div>
+    <div class="car-miniatures" id="elevMini"></div>
+  </div>
+</div></div>
+
+<!-- FORMULAIRE -->
+<div class="section" id="rdv">
+  <div style="text-align:center">
+    <span class="tag">Réponse personnelle garantie</span>
+    <h2>📮 Contact &amp; rendez-vous</h2>
+    <p class="sous-titre">Remplissez ce petit formulaire — <strong>Angélique vous rappelle personnellement.</strong><br>Ou appelez directement : <a class="tel-lien" href="tel:+33671734356" style="font-weight:800;color:var(--orange-fonce);text-decoration:none">📞 06 71 73 43 56</a></p>
+  </div>
+  <form id="form-rdv">
+    <label for="sujet">Votre demande concerne *</label>
+    <select id="sujet" name="sujet" required onchange="majFormulaire()">
+      <option value="toilettage">🛁 Un toilettage (rendez-vous)</option>
+      <option value="paracorde">🎨 Une création paracorde (collier, laisse, harnais)</option>
+      <option value="elevage">🌼 L'élevage — être prévenu(e) de la prochaine portée</option>
+    </select>
+    <label for="nom">Votre nom *</label>
+    <input id="nom" name="nom" required placeholder="Ex : Marie Dupont">
+    <label for="commune">Votre commune *</label>
+    <input id="commune" name="commune" required placeholder="Ex : Joigny">
+
+    <!-- Champs TOILETTAGE -->
+    <div class="champ-groupe" data-sujet="toilettage">
+      <label for="race">Race de votre chien</label>
+      <input id="race" name="race" placeholder="Ex : Golden retriever">
+      <label for="taille">Taille du chien</label>
+      <select id="taille" name="taille">
+        <option value="">— choisir —</option>
+        <option value="petit (-10kg)">Petit (moins de 10 kg)</option>
+        <option value="moyen (10-25kg)">Moyen (10 à 25 kg)</option>
+        <option value="grand (+25kg)">Grand (plus de 25 kg)</option>
+      </select>
+      <label for="prestation">Le toilettage souhaité *</label>
+      <textarea id="prestation" name="prestation" rows="3" data-req placeholder="Ex : tonte complète, coupe ciseaux, épilation, ongles…"></textarea>
+      <label for="dispos">Vos disponibilités</label>
+      <input id="dispos" name="dispos" placeholder="Ex : mardi ou jeudi après-midi">
+    </div>
+
+    <!-- Champs PARACORDE -->
+    <div class="champ-groupe" data-sujet="paracorde" style="display:none">
+      <label for="type_creation">Type de création *</label>
+      <select id="type_creation" name="type_creation" data-req>
+        <option value="">— choisir —</option>
+        <option value="collier">Collier (28 à 65 €)</option>
+        <option value="laisse">Laisse (28 à 45 €)</option>
+        <option value="harnais">Harnais (à partir de 45 €)</option>
+        <option value="plusieurs">Plusieurs créations / ensemble assorti</option>
+      </select>
+      <label for="modele_paracorde">Modèle de tressage (si repéré)</label>
+      <input id="modele_paracorde" name="modele_paracorde" placeholder="Ex : Cobra — voir « Voir les modèles » plus haut">
+      <div id="rappel-prix" class="rappel-prix" style="display:none"></div>
+      <div id="compteur-couleurs" class="compte-coul"></div>
+      <label>Couleur(s) de la tresse unie — cliquez (plusieurs possibles)</label>
+      <div class="pick" id="pick-paracorde"></div>
+      <label>… ou une tresse Diamonds (motif bicolore)</label>
+      <div class="pick" id="pick-diamonds"></div>
+      <label>… ou une tresse de la gamme spéciale</label>
+      <div class="pick" id="pick-speciales"></div>
+      <label>Couleur de la finition / fermeture (Biothane)</label>
+      <div class="pick" id="pick-biothane"></div>
+      <div id="bloc-taille" style="display:none">
+        <label for="taille_chien">Taille — choisissez, le prix s'affiche</label>
+        <select id="taille_chien" name="taille_chien" onchange="majPrixTaille()"></select>
+        <div id="prix-taille" class="rappel-prix" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- Champs ÉLEVAGE -->
+    <div class="champ-groupe" data-sujet="elevage" style="display:none">
+      <label for="preference">Votre préférence</label>
+      <select id="preference" name="preference">
+        <option value="indifférent">Mâle ou femelle, indifférent</option>
+        <option value="mâle">Plutôt un mâle</option>
+        <option value="femelle">Plutôt une femelle</option>
+      </select>
+      <label for="message_elevage">Quelques mots sur votre projet</label>
+      <textarea id="message_elevage" name="message_elevage" rows="3" placeholder="Ex : maison avec jardin, déjà eu un golden, enfants…"></textarea>
+    </div>
+
+    <label for="telephone">Votre téléphone *</label>
+    <input id="telephone" name="telephone" required type="tel" placeholder="06 12 34 56 78">
+    <div class="consent">
+      <input type="checkbox" id="consentement" required>
+      <label for="consentement" style="margin:0;font-weight:400">J'accepte que mes coordonnées soient transmises à Détente Canine uniquement pour être recontacté(e). Elles ne sont ni conservées à d'autres fins, ni transmises à des tiers. *</label>
+    </div>
+    <button type="submit" class="btn" style="width:100%">Envoyer ma demande 🐾</button>
+    <div class="msg-ok" id="ok">✅ Merci ! Votre demande est bien envoyée — Angélique vous rappelle très vite.</div>
+    <div class="msg-err" id="err">😕 Petit souci d'envoi. Réessayez dans un instant, ou contactez-nous via Facebook.</div>
+  </form>
+</div>
+</main>
+
+<footer>
+  <div class="section" style="padding-top:0;padding-bottom:0">
+    <p><strong>Détente Canine</strong> — Salon de toilettage canin, sur rendez-vous uniquement · Verlin (89330), Yonne</p>
+    <p>Entreprise individuelle Angélique Di Martino — SIRET 439 406 521 00039 (toilettage) · Élevage du Hameau des Nymphes, SIRET 439 406 521 00021 · Contact : angelique.dimartino@gmail.com</p>
+    <p>Photos des compagnons publiées avec l'accord de leurs maîtres · Données du formulaire utilisées uniquement pour vous recontacter (RGPD) · <a href="https://www.facebook.com/profile.php?id=100063984722777" target="_blank" rel="noopener">Notre page Facebook</a></p>
+  </div>
+</footer>
+
+<script>
+/* ===== CONFIG (modifiable en 10 secondes) ===== */
+const CONFIG = {
+  /* Où part le formulaire de rendez-vous.
+     - Sur Netlify : on passe par la fonction serveur /api/rdv (voir _redirects), qui relaie vers n8n.
+     - Ailleurs (GitHub Pages, domaine propre, fichier local) : appel direct du webhook n8n.
+       Ce cas exige que le nœud Webhook de n8n autorise l'origine du site (réglage « Allowed Origins (CORS) »). */
+  WEBHOOK_DIRECT: 'https://venomous-numbat.pikapod.net/webhook/detente-canine-rdv',
+  get WEBHOOK_URL(){ return location.hostname.endsWith('netlify.app') ? '/api/rdv' : this.WEBHOOK_DIRECT; },
+  TEL: '06 71 73 43 56',
+  AFFICHER_TEL: true,               // false = masque le téléphone PARTOUT sur le site
+  PRIX_CHIOT: '1 600 €',
+  PORTEE_TEXTE: "<strong>Naissance prévue : automne 2026.</strong><br>Laissez vos coordonnées pour être prévenu(e) dès l'arrivée des chiots.",
+  /* Modèles de tressage paracorde — pour ajouter une photo : photo:'photos/paracorde/cobra.jpg' */
+  MODELES: {
+    collier: { titre:'Colliers paracorde', prix:'28 à 65 € selon le modèle',
+      intro:"Six modèles — chacun porte le nom d'une de nos chiennes. Le nombre de couleurs indiqué est celui des fils tressés ; la boucle Biothane se choisit en plus, dans une seule teinte.",
+      modeles:[
+        {nom:"Bella", tarifs:[['20 à 24 cm','28 €'],['25 à 35 cm','35 €']], detail:"largeur 1,6 cm · épaisseur 0,5 cm · 2 couleurs de fil", coul:2, photos:['photos/produits/p-5360.jpg','photos/produits/p-5352.jpg']},
+        {nom:"Yuzü", tarifs:[['20 à 34 cm','35 €'],['35 à 45 cm','40 €']], detail:"largeur 3 cm · épaisseur 0,90 cm · 3 couleurs de fil", coul:3, photos:['photos/produits/p-5369.jpg','photos/produits/p-5370.jpg','photos/produits/p-5389.jpg','photos/produits/p-5387.jpg','photos/produits/p-5356.jpg','photos/produits/p-5388.jpg']},
+        {nom:"Ulysse", tarifs:[['20 à 34 cm','35 €'],['35 à 45 cm','40 €']], detail:"largeur 3 cm · épaisseur 0,90 cm · 3 couleurs de fil", coul:3, photos:['photos/produits/p-5353.jpg','photos/produits/p-5354.jpg','photos/produits/p-5364.jpg','photos/produits/p-5382.jpg','photos/produits/p-5372.jpg']},
+        {nom:"Vénus", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 3,5 cm · épaisseur 1,2 cm · 3 couleurs de fil", coul:3, photos:['photos/produits/p-5381.jpg','photos/produits/p-5365.jpg']},
+        {nom:"Olympe", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 4 cm · épaisseur 1,2 cm · 4 couleurs de fil", coul:4, photos:['photos/produits/p-5385.jpg','photos/produits/p-5386.jpg','photos/produits/p-5383.jpg','photos/produits/p-5384.jpg','photos/produits/p-5375.jpg','photos/produits/p-5374.jpg']},
+        {nom:"Sunny", tarifs:[['35 à 44 cm','55 €'],['45 à 54 cm','60 €'],['55 à 65 cm','65 €']], detail:"largeur 4,3 cm · épaisseur 1,2 cm · 4 couleurs de fil", coul:4, photos:['photos/produits/p-5371.jpg','photos/produits/p-5346.jpg','photos/produits/p-5350.jpg','photos/produits/p-5357.jpg','photos/produits/p-5373.jpg','photos/produits/p-5349.jpg','photos/produits/p-5358.jpg','photos/produits/p-5359.jpg','photos/produits/p-5363.jpg']} ] },
+    laisse:  { titre:'Laisses paracorde',  prix:'28 à 45 € selon le modèle',
+      intro:"Trois formes — fine ronde, plate, large ronde — en 1,20 m, 3 positions ou lasso. Le nombre de couleurs est celui des fils tressés ; la finition Biothane se choisit en plus.",
+      modeles:[
+        {nom:"Fine ronde 1,20 m", tarifs:[['1,20 m','28 €'],['+10 cm','+2 €']], detail:"2 couleurs de fil", coul:2, photos:['photos/produits/p-5343.jpg','photos/produits/p-5366.jpg']},
+        {nom:"Fine ronde 3 positions", tarifs:[['3 positions','32 €']], detail:"2 couleurs de fil", coul:2, photos:['photos/produits/p-5338.jpg','photos/produits/p-5339.jpg']},
+        {nom:"Fine ronde lasso", tarifs:[['lasso','30 €']], detail:"2 couleurs de fil", coul:2, photos:['photos/produits/p-5342.jpg']},
+        {nom:"Plate 1,20 m", tarifs:[['1,20 m','28 €'],['+10 cm','+2 €']], detail:"3 couleurs de fil", coul:3, photos:['photos/produits/p-5378.jpg','photos/produits/p-5368.jpg']},
+        {nom:"Plate 3 positions", tarifs:[['3 positions','45 €']], detail:"3 couleurs de fil", coul:3, photos:['photos/produits/p-5337.jpg']},
+        {nom:"Large ronde 1,20 m", tarifs:[['1,20 m','35 €'],['+10 cm','+2 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5344.jpg','photos/produits/p-5367.jpg','photos/produits/p-5380.jpg','photos/produits/p-5377.jpg']},
+        {nom:"Large ronde 3 positions", tarifs:[['3 positions','40 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5361.jpg']},
+        {nom:"Large ronde lasso", tarifs:[['lasso','45 €']], detail:"4 couleurs de fil", coul:4, photos:['photos/produits/p-5341.jpg','photos/produits/p-5340.jpg']} ] },
+    harnais: { titre:'Harnais paracorde',  prix:'à partir de 45 €',
+      intro:"⚠️ Uniquement pour les chiens de 1 à 10 kg. Tressé main, à vos couleurs.",
+      modeles:[ {nom:'Harnais petit chien', tarifs:[['1 à 10 kg','45 à 55 €']], detail:'chiens de 1 à 10 kg · 3 couleurs de fil', coul:3, photos:['photos/produits/harnais-1.jpg','photos/produits/harnais-2.jpg']} ] }
+  },
+  /* Photos des clients du salon (carrousel) — pour en ajouter : { src:'photos/xxx.jpg', alt:'...' } */
+  PHOTOS_CLIENTS: [
+    { src:'photos/modeles/mod-01.jpg', alt:'Bichon toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-02.jpg', alt:'Cocker noir toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-03.jpg', alt:'Cocker toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-04.jpg', alt:'Shih-tzu toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-05.jpg', alt:'Bouvier bernois toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-06.jpg', alt:'Caniche abricot toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-07.jpg', alt:'Terre-Neuve toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-08.jpg', alt:'Yorkshire toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-09.jpg', alt:'Bichon toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-10.jpg', alt:'Berger australien toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-11.jpg', alt:'Shih-tzu toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-12.jpg', alt:'Husky et golden retriever au salon Détente Canine' },
+    { src:'photos/modeles/mod-13.jpg', alt:'Shih-tzu toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-14.jpg', alt:'Westie toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-15.jpg', alt:'Spitz toiletté au salon Détente Canine' },
+    { src:'photos/modeles/mod-16.jpg', alt:'Shih-tzu toiletté au salon Détente Canine' }
+  ],
+  /* Avant / après — vraies photos envoyées par Angélique. Pour en ajouter : 'photos/avant-apres/xxx.jpg' */
+  AVANT_APRES: [
+    { src:'photos/avant-apres/ap-01.jpg',      alt:'Avant / après toilettage — bichon' },
+    { src:'photos/avant-apres/ap-yorkshire.jpg', alt:'Avant / après toilettage — yorkshire' },
+    { src:'photos/avant-apres/ap-03.jpg',      alt:'Avant / après toilettage — yorkshire' },
+    { src:'photos/avant-apres/ap-shihtzu.jpg', alt:'Avant / après toilettage — shih-tzu' },
+    { src:'photos/avant-apres/ap-05.jpg',      alt:'Avant / après toilettage — spitz noir' },
+    { src:'photos/avant-apres/ap-07.jpg',      alt:'Avant / après toilettage — bichon havanais' },
+    { src:'photos/avant-apres/ap-08.jpg',      alt:'Avant / après toilettage — shih-tzu' },
+    { src:'photos/avant-apres/ap-10.jpg',      alt:'Avant / après toilettage — bichon maltais' }
+  ],
+  /* Couleurs paracorde 550 uni (la tresse) — vraies photos (source paracord.fr)
+     RUPTURE DE STOCK : ajouter dispo:false à une couleur pour l'afficher grisée
+     et non sélectionnable — ex. {n:'Noir', img:'...', dispo:false}.
+     Retirer dispo:false (ou mettre dispo:true) la remet en vente. */
+  PARACORDE_COULEURS: [
+    {n:'Rouge impérial',img:'photos/paracorde/rouge-imperial.jpg'},{n:'Royal orange',img:'photos/paracorde/royal-orange.jpg'},{n:'Taxi jaune',img:'photos/paracorde/taxi-jaune.jpg'},{n:'Lemon jaune',img:'photos/paracorde/lemon-jaune.jpg'},
+    {n:'Métallique vert',img:'photos/paracorde/metallique-vert.jpg'},{n:'Néon vert',img:'photos/paracorde/neon-vert.jpg'},{n:'Fraîche mint',img:'photos/paracorde/fraiche-mint.jpg'},{n:'Turquoise',img:'photos/paracorde/turquoise.jpg'},
+    {n:'Néon turquoise',img:'photos/paracorde/neon-turquoise.jpg'},{n:'Colonial bleu',img:'photos/paracorde/colonial-bleu.jpg'},{n:'Royal bleu',img:'photos/paracorde/royal-bleu.jpg'},{n:'Deep violet',img:'photos/paracorde/deep-violet.jpg'},
+    {n:'Lilac',img:'photos/paracorde/lilac.jpg'},{n:'Passion rose',img:'photos/paracorde/passion-rose.jpg'},{n:'Rose rose',img:'photos/paracorde/rose-rose.jpg'},{n:'Noir',img:'photos/paracorde/noir.jpg'},
+    {n:'Snow blanc',img:'photos/paracorde/snow-blanc.jpg'},{n:'Mocca',img:'photos/paracorde/mocca.jpg'},{n:'Gold marron',img:'photos/paracorde/gold-marron.jpg'},{n:'Branch marron',img:'photos/paracorde/branch-marron.jpg'},{n:'Smoke gris',img:'photos/paracorde/smoke-gris.jpg'}
+  ],
+  /* Couleurs Biothane (finition/fermeture) — vraies photos + code */
+  BIOTHANE_COULEURS: [
+    {n:'Magenta rose',img:'photos/biothane/magenta-rose.jpg',c:'PK526'},{n:'Burnt orange',img:'photos/biothane/burnt-orange.jpg',c:'OR524'},{n:'Teal',img:'photos/biothane/teal.jpg',c:'TE521'},{n:'Skyan bleu',img:'photos/biothane/skyan-bleu.jpg',c:'BU52H'},
+    {n:'Bleu clair',img:'photos/biothane/bleu-clair.jpg',c:'BU521'},{n:'Noir',img:'photos/biothane/noir-bio.jpg',c:'BL520'},{n:'Coyote marron',img:'photos/biothane/coyote-marron.jpg',c:'CB521'},{n:'Rouge RD522',img:'photos/biothane/rouge-rd522.jpg',c:'RD522'}
+  ],
+  /* Tresses Diamonds bicolores — paracorde 550 Type III, vraies photos (source paracord.fr) */
+  DIAMONDS_COULEURS: [
+    {n:'Chocolate marron & Mocca',img:'photos/diamonds/chocolate-mocca.jpg'},{n:'Teal & Turquoise',img:'photos/diamonds/teal-turquoise.jpg'},{n:'Blanc & Passion rose',img:'photos/diamonds/blanc-passion-rose.jpg'},{n:'Néon turquoise & Teal',img:'photos/diamonds/neon-turquoise-teal.jpg'},{n:'Cream & International orange',img:'photos/diamonds/cream-international-orange.jpg'},
+    {n:'Silver gris & Noir',img:'photos/diamonds/silver-noir.jpg'},{n:'Impérial rouge & Rose pink',img:'photos/diamonds/imperial-rouge-rose-pink.jpg'},{n:'Indigo & Pastel bleu',img:'photos/diamonds/indigo-pastel-bleu.jpg'},{n:'Acid violet & Silver grey',img:'photos/diamonds/acid-violet-silver-grey.jpg'},{n:'Mint & Teal',img:'photos/diamonds/teal-mint.jpg'}
+  ],
+  /* Gamme spéciale — paracorde 550 Type III, vraies photos (source paracord.fr) */
+  SPECIALES_COULEURS: [
+    {n:'Supernova',img:'photos/speciales/supernova.jpg'},{n:'Caribic island',img:'photos/speciales/caribic-island.jpg'},{n:'Fireball',img:'photos/speciales/fireball.jpg'},{n:'Camouflage',img:'photos/speciales/camouflage.jpg'}
+  ]
+};
+document.getElementById('prix-chiot').textContent = CONFIG.PRIX_CHIOT;
+document.getElementById('portee-info').innerHTML = CONFIG.PORTEE_TEXTE;
+/* Téléphone : affiché partout (header, sections, formulaire) — piloté par CONFIG */
+const telHref = 'tel:+33' + CONFIG.TEL.replace(/\s/g,'').slice(1);
+document.querySelectorAll('.tel-lien').forEach(el => {
+  if (!CONFIG.AFFICHER_TEL) { el.style.display = 'none'; return; }
+  el.href = telHref;
+  el.innerHTML = el.innerHTML.replace(/06[\s\d]{8,}/, CONFIG.TEL);
+});
+if (!CONFIG.AFFICHER_TEL) {
+  document.getElementById('carte-tel-elevage').innerHTML = '<h3>📞 Parlons-en d\'abord</h3><p>Laissez vos coordonnées ci-dessous : Angélique vous rappelle personnellement.</p>';
+} else {
+  document.getElementById('tel-elevage').textContent = CONFIG.TEL;
+}
+/* ===== Page modèles paracorde ===== */
+function ouvrirModeles(cat){
+  const c = CONFIG.MODELES[cat]; if(!c) return;
+  document.getElementById('modal-titre').textContent = c.titre;
+  document.getElementById('modal-prix').textContent = c.prix + (c.intro ? ' — ' + c.intro : '');
+  document.getElementById('modal-grille').innerHTML = c.modeles.map((m,idx) => {
+    const ph = (m.photos && m.photos.length) ? m.photos : (m.photo ? [m.photo] : []);
+    const vis = ph.length
+      ? '<div class="mod-visu" id="mv'+idx+'">'
+        + '<img src="'+ph[0]+'" alt="'+m.nom+' — '+c.titre+'" id="mvimg'+idx+'">'
+        + (ph.length>1 ? '<div class="mod-pts" data-cible="mvimg'+idx+'">'+ph.map((p,k)=>'<span class="'+(k===0?'on':'')+'" data-src="'+p+'"></span>').join('')+'</div>' : '')
+        + '</div>'
+      : '<div class="ph">📷<span>Photo à venir</span></div>';
+    return '<div class="modele">' + vis +
+      '<div class="nom">'+m.nom+'</div>' +
+      (m.detail ? '<div class="mod-det">'+m.detail+'</div>' : '') +
+      (m.tarifs ? '<table class="tarifs">'+m.tarifs.map(function(t){return '<tr><td>'+t[0]+'</td><td>'+t[1]+'</td></tr>';}).join('')+'</table>' : '') +
+      '<button type="button" class="btn btn-modele" data-cat="'+cat+'" data-nom="'+m.nom.replace(/"/g,'&quot;')+'" data-nc="'+(m.coul||0)+'">Choisir ce modèle</button></div>';
+  }).join('');
+  document.querySelectorAll('#modal-grille .btn-modele').forEach(function(b){
+    b.addEventListener('click', function(){ choisirModele(b.dataset.cat, b.dataset.nom, parseInt(b.dataset.nc,10)||0); });
+  });
+  document.querySelectorAll('#modal-grille .mod-pts').forEach(function(pts){
+    var img = document.getElementById(pts.dataset.cible);
+    var pastilles = [].slice.call(pts.querySelectorAll('span'));
+    function montrer(k){
+      img.src = pastilles[k].dataset.src;
+      pastilles.forEach(function(s,j){ s.className = (j===k ? 'on' : ''); });
+    }
+    pastilles.forEach(function(s,k){ s.addEventListener('click', function(e){ e.stopPropagation(); montrer(k); }); });
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function(){
+      var i = pastilles.findIndex(function(s){ return s.className === 'on'; });
+      montrer((i+1) % pastilles.length);
+    });
+  });
+  document.getElementById('modal-modeles').classList.add('ouvert');
+  document.body.style.overflow = 'hidden';
+  document.body.classList.add('fenetre-ouverte');
+}
+function fermerModeles(){
+  document.getElementById('modal-modeles').classList.remove('ouvert');
+  document.body.style.overflow = '';
+  document.body.classList.remove('fenetre-ouverte');
+}
+function majPrixTaille(){
+  const sel = document.getElementById('taille_chien');
+  const pt = document.getElementById('prix-taille');
+  if(!sel || !pt) return;
+  if(sel.value){
+    pt.innerHTML = '✔ <b>'+sel.value+'</b>' + (window.supplementLongueur ? '<br><span style="font-size:.85em;color:#6b6257">Longueur sur mesure possible — '+window.supplementLongueur+'</span>' : '');
+    pt.style.display='block';
+  } else { pt.style.display='none'; }
+}
+function tarifsDuModele(cat, nom){
+  const c = CONFIG.MODELES[cat]; if(!c) return null;
+  const m = c.modeles.find(x=>x.nom===nom); return m && m.tarifs ? m : null;
+}
+function choisirModele(cat, nom, nbCoul){
+  fermerModeles();
+  preselect('paracorde');
+  document.getElementById('type_creation').value = cat;
+  document.getElementById('modele_paracorde').value = nom;
+  if(window.resetColoris) window.resetColoris();
+  window.limiteCouleurs = nbCoul || 0;
+  if(window.majCompteurCouleurs) window.majCompteurCouleurs();
+  const sel = document.getElementById('taille_chien');
+  const bloc = document.getElementById('bloc-taille');
+  const pt = document.getElementById('prix-taille');
+  const mm = tarifsDuModele(cat, nom);
+  const lignes = (mm && mm.tarifs) ? mm.tarifs.filter(t => !/^\+/.test(t[0])) : [];
+  if (sel) {
+    if (lignes.length > 1) {
+      sel.innerHTML = '<option value="">— choisir la taille —</option>' +
+        lignes.map(t => '<option value="'+t[0]+' — '+t[1]+'">'+t[0]+' — '+t[1]+'</option>').join('');
+      bloc.style.display = ''; pt.style.display='none';
+    } else if (lignes.length === 1) {
+      sel.innerHTML = '<option value="'+lignes[0][0]+' — '+lignes[0][1]+'" selected>'+lignes[0][0]+' — '+lignes[0][1]+'</option>';
+      bloc.style.display = ''; pt.style.display='none';
+    } else {
+      sel.innerHTML = ''; bloc.style.display = 'none';
+    }
+  }
+  const supp = (mm && mm.tarifs) ? mm.tarifs.find(t => /^\+/.test(t[0])) : null;
+  window.supplementLongueur = supp ? supp[0]+' : '+supp[1] : '';
+  const z = document.getElementById('rappel-prix');
+  const m = tarifsDuModele(cat, nom);
+  if(z){
+    if(m){ z.innerHTML = '<b>'+nom+'</b> — '+(m.detail||'')+'<br>'+m.tarifs.map(t=>t[0]+' : <b>'+t[1]+'</b>').join(' · ')+'<br><span style="font-size:.85em;color:#6b6257">La boucle Biothane se choisit en plus, dans une seule teinte.</span>'; z.style.display='block'; }
+    else { z.style.display='none'; }
+  }
+  document.getElementById('rdv').scrollIntoView({behavior:'smooth'});
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') fermerModeles(); });
+/* ===== Formulaire dynamique selon le sujet ===== */
+function majFormulaire(){
+  const sujet = document.getElementById('sujet').value;
+  document.querySelectorAll('.champ-groupe').forEach(g => {
+    const actif = g.dataset.sujet === sujet;
+    g.style.display = actif ? '' : 'none';
+    g.querySelectorAll('[data-req]').forEach(c => c.required = actif);
+    if (!actif) g.querySelectorAll('input,select,textarea').forEach(c => { if(c.tagName==='SELECT'){c.selectedIndex=0;} else {c.value='';} });
+  });
+}
+function preselect(v){ document.getElementById('sujet').value = v; majFormulaire(); }
+majFormulaire();
+/* ===== Coloris paracorde & Biothane : affichage catalogue + sélection au formulaire ===== */
+window.selParacorde = [];
+window.selDiamonds = [];
+window.selSpeciales = [];
+window.selBiothane = '';
+window.limiteCouleurs = 0;   // 0 = pas de limite ; sinon nombre de fils du modèle choisi
+window.totalCouleurs = function(){ return window.selParacorde.length + window.selDiamonds.length + window.selSpeciales.length; };
+window.majCompteurCouleurs = function(){
+  var z = document.getElementById('compteur-couleurs'); if(!z) return;
+  if(!window.limiteCouleurs){ z.textContent=''; z.className='compte-coul'; return; }
+  var n = window.totalCouleurs();
+  z.textContent = 'Ce modèle se tresse avec ' + window.limiteCouleurs + ' couleur' + (window.limiteCouleurs>1?'s':'') + ' de fil — ' + n + ' sélectionnée' + (n>1?'s':'') + '.' + (n>=window.limiteCouleurs ? ' ✔' : '');
+  z.className = 'compte-coul' + (n>=window.limiteCouleurs ? ' ok' : '');
+};
+(function(){
+  const P = CONFIG.PARACORDE_COULEURS || [], D = CONFIG.DIAMONDS_COULEURS || [], S = CONFIG.SPECIALES_COULEURS || [], B = CONFIG.BIOTHANE_COULEURS || [];
+  /* dispo:false dans CONFIG => la couleur reste visible mais grisée et non sélectionnable */
+  const indispo = c => c.dispo === false;
+  const sw = c => '<div class="sw'+(indispo(c)?' indispo':'')+'"'+(indispo(c)?' title="Momentanément indisponible"':'')+'><div class="pastille" style="background-image:url('+c.img+')"></div>'+c.n+(c.c?'<div class="code">'+c.c+'</div>':'')+(indispo(c)?'<span class="rupture">momentanément indisponible</span>':'')+'</div>';
+  const fill = (id,arr)=>{ const el=document.getElementById(id); if(el) el.innerHTML = arr.map(sw).join(''); };
+  fill('coloris-paracorde',P); fill('coloris-diamonds',D); fill('coloris-speciales',S); fill('coloris-biothane',B);
+  const multi = (id,arr,key)=>{ const p=document.getElementById(id); if(!p) return; p.innerHTML = arr.map(sw).join('');
+    p.querySelectorAll('.sw').forEach((el,i)=> el.addEventListener('click', ()=>{
+      if(indispo(arr[i])) return;
+      const n=arr[i].n; const s=window[key]; const k=s.indexOf(n);
+      if(k>=0){ s.splice(k,1); el.classList.remove('on'); }
+      else {
+        if(window.limiteCouleurs && window.totalCouleurs() >= window.limiteCouleurs){
+          const z=document.getElementById('compteur-couleurs');
+          if(z){ z.classList.add('stop'); setTimeout(()=>z.classList.remove('stop'),900); }
+          return;
+        }
+        s.push(n); el.classList.add('on');
+      }
+      window.majCompteurCouleurs();
+    })); };
+  multi('pick-paracorde',P,'selParacorde');
+  multi('pick-diamonds',D,'selDiamonds');
+  multi('pick-speciales',S,'selSpeciales');
+  const pb=document.getElementById('pick-biothane');
+  if(pb){ pb.innerHTML = B.map(sw).join('');
+    pb.querySelectorAll('.sw').forEach((el,i)=> el.addEventListener('click', ()=>{
+      if(indispo(B[i])) return;
+      const was = el.classList.contains('on');
+      pb.querySelectorAll('.sw').forEach(s=>s.classList.remove('on'));
+      if(!was){ el.classList.add('on'); window.selBiothane = B[i].n; } else { window.selBiothane=''; }
+    }));
+  }
+  window.resetColoris = ()=>{ window.selParacorde=[]; window.selDiamonds=[]; window.selSpeciales=[]; window.selBiothane='';
+    document.querySelectorAll('.pick .sw.on').forEach(s=>s.classList.remove('on')); window.majCompteurCouleurs(); };
+})();
+/* ===== Carrousel « Avant / Après » (photos Angélique) ===== */
+(function(){
+  const photos = (CONFIG.AVANT_APRES || []).map((s,i)=> typeof s === 'string'
+    ? { src:s, alt:'Avant / après toilettage au salon Détente Canine '+(i+1) } : s);
+  const principale = document.getElementById('avap-principale');
+  const miniZone   = document.getElementById('avap-miniatures');
+  const compteur   = document.getElementById('avap-compteur');
+  if(!principale || !photos.length) return;
+  let idx = 0;
+  miniZone.innerHTML = photos.map((p,i) =>
+    '<img class="car-mini" src="'+p.src+'" alt="'+p.alt+'" onclick="avapGo('+i+')">'
+  ).join('');
+  const minis = miniZone.querySelectorAll('.car-mini');
+  function rendre(recentrer){
+    const p = photos[idx];
+    principale.src = p.src; principale.alt = p.alt;
+    minis.forEach((m,i)=> m.classList.toggle('actif', i===idx));
+    if(recentrer && minis[idx]){
+      const cible = minis[idx].offsetLeft - (miniZone.clientWidth - minis[idx].clientWidth)/2;
+      miniZone.scrollTo({ left: cible, behavior:'smooth' });
+    }
+    compteur.textContent = (idx+1)+' / '+photos.length;
+  }
+  window.avapMove = d => { idx = (idx + d + photos.length) % photos.length; rendre(true); };
+  window.avapGo   = i => { idx = i; rendre(true); };
+  rendre(false);
+})();
+/* ===== Carrousel « clients à 4 pattes » ===== */
+(function(){
+  const photos = CONFIG.PHOTOS_CLIENTS || [];
+  const principale = document.getElementById('car-principale');
+  const miniZone   = document.getElementById('car-miniatures');
+  const compteur   = document.getElementById('car-compteur');
+  if(!principale || !photos.length) return;
+  let idx = 0;
+  miniZone.innerHTML = photos.map((p,i) =>
+    '<img class="car-mini" src="'+p.src+'" alt="'+p.alt+'" onclick="carGo('+i+')">'
+  ).join('');
+  const minis = miniZone.querySelectorAll('.car-mini');
+  function rendre(recentrer){
+    const p = photos[idx];
+    principale.src = p.src; principale.alt = p.alt;
+    minis.forEach((m,i)=> m.classList.toggle('actif', i===idx));
+    // recentrer la miniature active dans SA barre uniquement (jamais scroller la page au chargement)
+    if(recentrer && minis[idx]){
+      const cible = minis[idx].offsetLeft - (miniZone.clientWidth - minis[idx].clientWidth)/2;
+      miniZone.scrollTo({ left: cible, behavior:'smooth' });
+    }
+    compteur.textContent = (idx+1)+' / '+photos.length;
+  }
+  window.carMove = d => { idx = (idx + d + photos.length) % photos.length; rendre(true); };
+  window.carGo   = i => { idx = i; rendre(true); };
+  rendre(false);
+})();
+document.getElementById('form-rdv').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const f = e.target;
+  const sujet = f.sujet.value;
+  /* résumé lisible pour le rappel d'Angélique (compatible workflow n8n existant) */
+  let resume = '';
+  if (sujet === 'toilettage') resume = [f.prestation.value, f.race.value && 'Race : '+f.race.value, f.taille.value && 'Taille : '+f.taille.value, f.dispos.value && 'Dispos : '+f.dispos.value].filter(Boolean).join(' · ');
+  if (sujet === 'paracorde')  resume = [f.type_creation.value && 'Création : '+f.type_creation.value, f.modele_paracorde.value && 'Modèle : '+f.modele_paracorde.value, window.selParacorde.length && 'Tresse unie : '+window.selParacorde.join(', '), window.selDiamonds.length && 'Diamonds : '+window.selDiamonds.join(', '), window.selSpeciales.length && 'Gamme spéciale : '+window.selSpeciales.join(', '), window.selBiothane && 'Finition Biothane : '+window.selBiothane, f.taille_chien.value && 'Taille choisie : '+f.taille_chien.value].filter(Boolean).join(' · ');
+  if (sujet === 'elevage')    resume = ['Chiot golden — préférence : '+f.preference.value, f.message_elevage.value].filter(Boolean).join(' · ');
+  const data = {
+    sujet, nom: f.nom.value, commune: f.commune.value,
+    race: f.race.value, taille: f.taille.value, prestation: resume,
+    dispos: f.dispos.value, telephone: f.telephone.value,
+    type_creation: f.type_creation.value, modele_paracorde: f.modele_paracorde.value,
+    couleurs_tresse: window.selParacorde.join(', '), couleurs_diamonds: window.selDiamonds.join(', '), couleurs_speciales: window.selSpeciales.join(', '), couleur_finition: window.selBiothane,
+    couleurs: '', taille_chien: f.taille_chien.value,
+    preference: f.preference.value, message_elevage: f.message_elevage.value,
+    consentement: document.getElementById('consentement').checked,
+    date_demande: new Date().toISOString()
+  };
+  document.getElementById('ok').style.display='none';
+  document.getElementById('err').style.display='none';
+  try {
+    const r = await fetch(CONFIG.WEBHOOK_URL, { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(data) });
+    if (r.ok) { document.getElementById('ok').style.display='block'; f.reset(); majFormulaire(); window.resetColoris && window.resetColoris(); }
+    else { document.getElementById('err').style.display='block'; }
+  } catch(err) { document.getElementById('err').style.display='block'; }
+});
+</script>
+<script>
+function basculerMenu(e){e.preventDefault();document.getElementById('md').classList.toggle('ouvert');}
+function fermerMenu(){document.getElementById('md').classList.remove('ouvert');}
+document.addEventListener('click',function(e){var m=document.getElementById('md');if(m&&!m.contains(e.target))m.classList.remove('ouvert');});
+</script>
+<script>
+var ELEV=['photos/elevage/g-5403.jpg','photos/elevage/g-5406.jpg','photos/elevage/g-5407.jpg','photos/elevage/g-5408.jpg','photos/elevage/g-5409.jpg','photos/elevage/g-5412.jpg','photos/elevage/g-5426.jpg','photos/elevage/g-5428.jpg','photos/elevage/g-5431.jpg','photos/elevage/g-5432.jpg','photos/elevage/g-5443.jpg','photos/elevage/g-5444.jpg','photos/elevage/g-5449.jpg','photos/elevage/g-5450.jpg','photos/elevage/g-5451.jpg','photos/elevage/g-5453.jpg','photos/elevage/g-5455.jpg','photos/elevage/g-5457.jpg','photos/elevage/g-5460.jpg','photos/elevage/g-5461.jpg','photos/elevage/g-5462.jpg','photos/elevage/g-5465.jpg','photos/elevage/g-5467.jpg','photos/elevage/g-5468.jpg'], elevI=0;
+function elevGo(i){elevI=(i+ELEV.length)%ELEV.length;
+ document.getElementById('elevImg').src=ELEV[elevI];
+ document.getElementById('elevCpt').textContent=(elevI+1)+' / '+ELEV.length;
+ document.querySelectorAll('#elevMini img').forEach(function(m,k){m.className=(k===elevI?'car-mini on':'car-mini')});}
+function elevMove(d){elevGo(elevI+d)}
+(function(){var m=document.getElementById('elevMini'); if(!m) return;
+ ELEV.forEach(function(s,k){var im=document.createElement('img');im.src=s;im.className='car-mini';im.onclick=function(){elevGo(k)};m.appendChild(im)});
+ elevGo(0);})();
+</script>
+<script>
+var BD=[{s:'photos/bd/planche-1.jpg',t:'Épisode 1 — Nos premiers jours'},
+        {s:'photos/bd/planche-2.jpg',t:'Épisode 2 — La maison est à nous'},
+        {s:'photos/bd/planche-3.jpg',t:'Épisode 3 — Dehors !'},
+        {s:'photos/bd/planche-4.jpg',t:'Épisode 4 — La bande'},
+        {s:'photos/bd/planche-5.jpg',t:'Épisode 5 — Il gèle'}], bdI=0;
+function bdGo(i){bdI=(i+BD.length)%BD.length;
+ document.getElementById('bdImg').src=BD[bdI].s;
+ document.getElementById('bdImg').alt=BD[bdI].t;
+ document.getElementById('bdCpt').textContent=BD[bdI].t;
+ document.querySelectorAll('#bdMini img').forEach(function(m,k){m.className=(k===bdI?'car-mini on':'car-mini')});}
+function bdMove(d){bdGo(bdI+d)}
+(function(){var m=document.getElementById('bdMini'); if(!m) return;
+ BD.forEach(function(b,k){var im=document.createElement('img');im.src=b.s;im.className='car-mini';im.onclick=function(){bdGo(k)};m.appendChild(im)});
+ bdGo(0);})();
+</script>
+<div id="lightbox" onclick="fermerPlanche()" style="display:none;position:fixed;inset:0;background:rgba(20,16,12,.94);z-index:9999;overflow:auto;padding:16px;text-align:center">
+  <button onclick="fermerPlanche()" aria-label="Fermer" style="position:fixed;top:14px;right:16px;width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.5);color:#fff;font-size:1.5rem;font-weight:800;cursor:pointer;z-index:10000">✕</button>
+  <img id="lightboxImg" src="" alt="Planche du Journal du Hameau" style="max-width:100%;height:auto;border-radius:10px;margin-top:8px">
+  <div style="color:#f3e9dd;font-size:.9rem;margin:10px 0 20px">Cliquez n'importe où pour fermer</div>
+</div>
+<script>
+function ouvrirPlanche(){var b=document.getElementById('bdImg');document.getElementById('lightboxImg').src=b.src;
+ document.getElementById('lightbox').style.display='block';document.body.style.overflow='hidden';
+ document.body.classList.add('fenetre-ouverte');}
+function fermerPlanche(){document.getElementById('lightbox').style.display='none';document.body.style.overflow='';
+ document.body.classList.remove('fenetre-ouverte');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')fermerPlanche();});
+</script>
+</body>
+</html>
