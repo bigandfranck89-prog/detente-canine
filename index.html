@@ -835,11 +835,8 @@ function elevMove(d){elevGo(elevI+d)}
  elevGo(0);})();
 </script>
 <script>
-var BD=[{s:'photos/bd/planche-1.jpg',t:'Épisode 1 — Nos premiers jours'},
-        {s:'photos/bd/planche-2.jpg',t:'Épisode 2 — La maison est à nous'},
-        {s:'photos/bd/planche-3.jpg',t:'Épisode 3 — Dehors !'},
-        {s:'photos/bd/planche-4.jpg',t:'Épisode 4 — La bande'},
-        {s:'photos/bd/planche-5.jpg',t:'Épisode 5 — Il gèle'}], bdI=0;
+var BD=[{s:'photos/bd/ep1_neuf.jpg',t:'Épisode 1 — Nos premiers jours'},
+        {s:'photos/bd/ep2_puzzle2.jpg',t:'Épisode 2 — La maison est à nous'}], bdI=0;
 function bdGo(i){bdI=(i+BD.length)%BD.length;
  document.getElementById('bdImg').src=BD[bdI].s;
  document.getElementById('bdImg').alt=BD[bdI].t;
